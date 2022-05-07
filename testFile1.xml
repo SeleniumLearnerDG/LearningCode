@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Verify page apis" skipped="0" tests="1" time="9.78"
+           timestamp="2021-09-24T16:52:35.750+05:30[Asia/Kolkata]">
+    <testcase name="Verify indexing page"/>
+</testsuite>

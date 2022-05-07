@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite>
+
+<testsuite failures="0" tests="20" name="GEC =&gt; tv seasons should work" time="197.82" errors="1" skipped="0" timestamp="2021-09-24T16:52:35.763+05:30[Asia/Kolkata]">
+
+    
+<testcase name="Search tv season by show">
+</testcase>
+
+    
+<testcase name="Search tv season by name">
+</testcase>
+
+    
+<testcase name="Search tv season by id">
+</testcase>
+
+    
+<testcase name="Sort tv season by id in ascending order">
+</testcase>
+
+    
+<testcase name="Sort tv season by id in descending order">
+</testcase>
+
+    
+<testcase name="Sort tv season by name in ascending order">
+</testcase>
+
+    
+<testcase name="Sort tv season by name in descending order">
+</testcase>
+
+    
+<testcase name="Sort tv season by start date in descending order">
+</testcase>
+
+    
+<testcase name="Sort tv season by end date in descending order">
+</testcase>
+
+    
+<testcase name="Verify updating tv season">
+</testcase>
+
+    
+<testcase name="Verify indexing tv season">
+</testcase>
+
+    
+<testcase name="Verify creation and deletion of tv season">
+</testcase>
+
+    
+<testcase name="Verify creation and deletion of tv season with vip and premium flags">
+</testcase>
+
+    
+<testcase name="Verify Bulk Ingestion Download with queryParam and minimum selectFields">
+</testcase>
+
+    
+<testcase name="Verify Bulk Ingestion Download with queryParam and all selectFields">
+</testcase>
+
+    
+<testcase name="Verify Bulk Ingestion Download with queryParam and minimum selectFields1">
+</testcase>
+
+    
+<testcase name="Verify Bulk upload tv season creation">
+</testcase>
+
+    
+<testcase name="Verify updating tv season with translations">
+
+        
+<error message="Access key cannot be null." type="java.lang.IllegalArgumentException">
+Access key cannot be
+            null.
+
+        
+</error>
+
+        
+<system-err>
+Access key cannot be null.
+            com.amazonaws.auth.BasicAWSCredentials.
+&lt;
+init
+&gt;
+(BasicAWSCredentials.java:37)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.amazonAWSCredentials(AwsDynamoClient.java:183)
+
+            com.hotstar.test.dynamoDB.AwsDynamoClient.amazonAWSCredentialsProvider(AwsDynamoClient.java:178)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.getDynamoClient(AwsDynamoClient.java:125)
+
+            com.hotstar.test.dynamoDB.AwsDynamoClient.dynamoDBMapper(AwsDynamoClient.java:173)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.fetchTvSeasonDoc(AwsDynamoClient.java:107)
+
+            com.hotstar.test.features.steps.stepDefs.gec.TvSeasonStepDefs.iVerifyTranslationsIndexingInDynamo(TvSeasonStepDefs.java:241)
+            ✽.I verify season translations indexing in
+
+            Dynamo(/Users/dikshagupta/cms-automation/cms-auto/src/test/resources/features/osiris/gec/TvSeason.feature:168)
+        
+</system-err>
+
+    
+</testcase>
+
+
+</testsuite>
+
+</testsuite>

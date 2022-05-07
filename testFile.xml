@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="1" failures="0" name="Verify page apis" skipped="0" tests="21" time="207.6"
+           timestamp="2021-09-24T16:52:35.750+05:30[Asia/Kolkata]">
+    <testcase name="Verify indexing page"/>
+    <testcase name="Search tv season by show"/>
+    <testcase name="Search tv season by name"/>
+    <testcase name="Search tv season by id"/>
+    <testcase name="Sort tv season by id in ascending order"/>
+    <testcase name="Sort tv season by id in descending order"/>
+    <testcase name="Sort tv season by name in ascending order"/>
+    <testcase name="Sort tv season by name in descending order"/>
+    <testcase name="Sort tv season by start date in descending order"/>
+    <testcase name="Sort tv season by end date in descending order"/>
+    <testcase name="Verify updating tv season"/>
+    <testcase name="Verify indexing tv season"/>
+    <testcase name="Verify creation and deletion of tv season"/>
+    <testcase name="Verify creation and deletion of tv season with vip and premium flags"/>
+    <testcase name="Verify Bulk Ingestion Download with queryParam and minimum selectFields"/>
+    <testcase name="Verify Bulk Ingestion Download with queryParam and all selectFields"/>
+    <testcase name="Verify Bulk Ingestion Download with queryParam and minimum selectFields1"/>
+    <testcase name="Verify Bulk upload tv season creation"/>
+    <testcase name="Verify updating tv season with translations">
+        <error message="Access key cannot be null." type="java.lang.IllegalArgumentException">Access key cannot be
+            null.
+        </error>
+        <system-err>Access key cannot be null.
+            com.amazonaws.auth.BasicAWSCredentials.&lt;init&gt;(BasicAWSCredentials.java:37)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.amazonAWSCredentials(AwsDynamoClient.java:183)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.amazonAWSCredentialsProvider(AwsDynamoClient.java:178)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.getDynamoClient(AwsDynamoClient.java:125)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.dynamoDBMapper(AwsDynamoClient.java:173)
+            com.hotstar.test.dynamoDB.AwsDynamoClient.fetchTvSeasonDoc(AwsDynamoClient.java:107)
+            com.hotstar.test.features.steps.stepDefs.gec.TvSeasonStepDefs.iVerifyTranslationsIndexingInDynamo(TvSeasonStepDefs.java:241)
+            ✽.I verify season translations indexing in
+            Dynamo(/Users/dikshagupta/cms-automation/cms-auto/src/test/resources/features/osiris/gec/TvSeason.feature:168)
+        </system-err>
+    </testcase>
+</testsuite>
